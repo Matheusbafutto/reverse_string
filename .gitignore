@@ -1,28 +1,26 @@
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+#include <iostream>
 
-# Precompiled Headers
-*.gch
-*.pch
+using namespace std;
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+int main()
+{  char a[50];
+    int i = 0, j=0,c; 
+    
+   cout << "Enter String:"<< endl;
+   cin >> a;
+   while(a[j] != 0) {
+       j += 1;
+   }
+   j--;
+   while (i < j) {
+        c = a[i];
+       a[i] = a[j];
+       a[j] = c;
+       i++;
+       j--;
+   }
+   cout << "The reverse string is:" << a << endl;
+   
+   return 0;
+}
 
-# Fortran module files
-*.mod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
