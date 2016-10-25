@@ -3,7 +3,8 @@
 using namespace std;
 
 int main()
-{  char a[50];
+{
+	string a;
     int i = 0, j=0,c; 
     
    cout << "Enter String:"<< endl;
